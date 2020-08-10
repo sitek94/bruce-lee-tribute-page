@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+#main {
+  position: relative;
+}
+
+#title {
+  position: absolute;
+}
+
+#img-div {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#image {
+  height: 100%;
+  transform: translateX(-200px);
+
+  @media (min-width: 800px) {
+    transform: translateX(0);
+  }
+}
