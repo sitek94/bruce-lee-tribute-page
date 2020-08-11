@@ -14,36 +14,12 @@ html {
 }
 
 #main {
-  position: relative;
   min-width: 30rem;
 }
 
 #title {
-  position: absolute;
-  width: 100%;
-  top: 80vh;
-  height: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #eee;
-  background-color: rgba(51, 51, 51, 0.527);
-  text-align: right;
-  padding-right: 3rem;
-}
-
-@media (max-width: 440px) {
-  #title {
-    top: 75vh;
-    height: 25vh;
-  }
+  margin: 3rem 0;
+  text-align: center;
 }
 
 #title__main {
@@ -53,31 +29,33 @@ html {
 }
 
 #title__sub {
+  margin: 0 auto;
+  max-width: 60%;
   font-size: 2rem;
 }
 
 #img-div {
-  overflow: hidden;
+  width: 100%;
 }
 
 #image {
-  height: 100vh;
-  margin-bottom: 1rem;
-  -webkit-transform: translateX(-200px);
-          transform: translateX(-200px);
-}
-
-@media (min-width: 800px) {
-  #image {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
+  display: block;
+  margin: 0 auto 1rem;
+  width: 100%;
 }
 
 #img-caption {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-bottom: 6rem;
+}
+
+@media (max-width: 650px) {
+  #img-caption {
+    max-width: 75%;
+    margin: 0 auto 6rem;
+    font-size: 1.5rem;
+  }
 }
 
 #tribute-info {
@@ -95,14 +73,21 @@ html {
 
 #tribute-info ul {
   list-style: none;
+  padding: 0 3rem;
+}
+
+@media (max-width: 500px) {
+  #tribute-info ul {
+    padding: 0 1.5rem;
+  }
 }
 
 #tribute-info li {
   text-align: left;
   padding: 1.6rem;
   background-color: #fff;
-  -webkit-transition: background-color .2s;
-  transition: background-color .2s;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 
 #tribute-info li:hover {
